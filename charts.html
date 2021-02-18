@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<body id="charts">
+	</body>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Charts
+		</title>
+		<style>
+			body {
+				text-align:center;
+				margin-left:auto;
+				margin-right:auto;
+			}
+		</style>
+		<script>
+			function addImg(code) {
+				var body = document.getElementById("charts");
+				var pic6 = document.createElement("img");
+				pic6.src = "http://j4.dfcfw.com/charts/pic6/" + code + ".png?v=" + Math.random();
+				body.appendChild(pic6);
+				body.appendChild(document.createElement("br"));
+				var JJJZ1 = document.createElement("img");
+				JJJZ1.src = "http://j3.dfcfw.com/images/JJJZ1/" + code + ".png?v=" + Math.random();
+				body.appendChild(JJJZ1);
+				body.appendChild(document.createElement("br"));
+				body.appendChild(document.createElement("br"));
+				body.appendChild(document.createElement("br"));
+			}
+			(function() {
+				addImg("008888");
+				addImg("001630");
+			})();
+		</script>
+	</head>
+</html>
